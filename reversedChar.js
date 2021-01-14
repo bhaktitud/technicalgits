@@ -9,8 +9,8 @@ function recursive (arrayOfChar) {
     reversedChar.push(arrayOfChar[initialIndex])
 
     initialIndex = initialIndex - 1
-    recursive(arrayOfChar)
+    return recursive(arrayOfChar)
   }
 }
 
-recursive(arrayOfChar)
+console.log(recursive(['h','e','l','l','o'])) // print the reversed array of char ['o','l','l','e','h']
