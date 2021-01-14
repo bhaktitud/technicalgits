@@ -1,7 +1,3 @@
-let arrayOfChar = ['h','e','l','l','o']
-let reversedChar = []
-let initialIndex = arrayOfChar.length - 1
-
 function recursive (arrayOfChar) {
   if(initialIndex < 0){
     return reversedChar
@@ -13,4 +9,9 @@ function recursive (arrayOfChar) {
   }
 }
 
-console.log(recursive(['h','e','l','l','o'])) // print the reversed array of char ['o','l','l','e','h']
+let arrayOfChar = ['h','e','l','l','o']
+let reversedChar = []
+let initialIndex = arrayOfChar.length - 1
+
+
+console.log(recursive(arrayOfChar)) // print the reversed array of char ['o','l','l','e','h']

@@ -1,9 +1,3 @@
-let consecutiveCount = 0
-let initialIndex = 0
-let tempValue = 0
-let maxCounter = 0
-const findThisInt = 1
-
 function recursive (arrayOfInt) {
 
   tempValue = arrayOfInt[initialIndex]
@@ -25,6 +19,13 @@ function recursive (arrayOfInt) {
   }
 
 }
+
+//required initialization variables
+let consecutiveCount = 0
+let initialIndex = 0
+let tempValue = 0
+let maxCounter = 0
+const findThisInt = 1
 
 console.log(recursive([1,0,0,1,0,1,1])) //print 2, the max consecutive 1s
 // console.log(recursive([1,1,0,1,1,1])) //print 3, the max consecutive 1s
